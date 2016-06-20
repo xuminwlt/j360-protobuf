@@ -31,6 +31,8 @@ public class TestPersonModel {
 
         // -------------- 分割线：上面是发送方，将数据序列化后发送 ---------------
         byte[] byteArray = output.toByteArray();
+        System.out.println(byteArray.length);
+        System.out.println("{\"id\":100,\"name\":\"zhuliangliang\",\"email\":\"zhuliangliang.me\"}".getBytes().length);
 
         // -------------- 分割线：下面是接收方，将数据接收后反序列化 ---------------
         // 接收到流并读取，如网络输入流，这里用ByteArrayInputStream来代替
